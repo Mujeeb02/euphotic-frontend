@@ -14,6 +14,7 @@ function App() {
   const fetchDishes = async () => {
     try {
       const response = await axios.get('https://euphotic-backend.onrender.com/api/dishes');
+      console.log(response.data)
       setDishes(response.data);
     } catch (error) {
       console.error('Error fetching dishes:', error);
