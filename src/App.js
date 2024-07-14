@@ -6,9 +6,9 @@ function App() {
   const [dishes, setDishes] = useState([]);
 
   useEffect(() => {
-    const intervalId = setInterval(fetchDishes, 1000); // Poll every 5 seconds
-    fetchDishes(); // Initial fetch
-    return () => clearInterval(intervalId); // Cleanup interval on component unmount
+    const intervalId = setInterval(fetchDishes, 1000); 
+    fetchDishes(); 
+    return () => clearInterval(intervalId); 
   }, []);
 
   const fetchDishes = async () => {
