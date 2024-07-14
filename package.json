@@ -14,8 +14,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "preinstall": "npm install",
+    "preinstall": "rm -rf node_modules package-lock.json",
     "postinstall": "npm install",
+    "debug": "ls -la node_modules && npm list --depth=0",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
